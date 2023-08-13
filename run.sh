@@ -1,2 +1,2 @@
 #!/bin/sh
-py python_code/discordbot.py
+python3 python_code/discordbot.py
