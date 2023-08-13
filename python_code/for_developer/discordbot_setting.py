@@ -26,8 +26,8 @@ with open(Synthax_file, 'r', encoding='utf-8') as f:
                   other_bots_Synthax.append(row[1])
 
 # VOICEVOX音声再生（.bat）ファイルへのパス
-bat_json = "output_json_from_VOICEVOX.sh"   
-bat_voice = "output_voice_from_VOICEVOX.sh"   
+sh_json = "output_json_from_VOICEVOX.sh"   
+sh_voice = "output_voice_from_VOICEVOX.sh"   
 
 #各種ファイルへのパス(discordbot.pyからみた相対パス)
 voice_file = "tmp/tmp_voice.wav"      # VOICEVOX音声の保存先

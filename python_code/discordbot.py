@@ -1,5 +1,5 @@
 # パッケージのインストール
-from asyncio.windows_events import NULL
+#from asyncio.windows_events import NULL
 import discord
 from discord.ext import tasks, commands
 import csv

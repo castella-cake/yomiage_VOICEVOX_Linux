@@ -112,11 +112,11 @@ class room_information():
 
         # batファイルを呼び起こしてwavファイルを作成する
         if message_tmp.author.id in self.voice_dict.keys():
-            command1 = bat_json + ' ' + arg + ' ' + self.voice_dict[message_tmp.author.id]
-            command2 = bat_voice + ' ' + self.voice_dict[message_tmp.author.id]
+            command1 = 'sh ' + sh_json + ' ' + arg + ' ' + self.voice_dict[message_tmp.author.id]
+            command2 = 'sh ' + sh_voice + ' ' + self.voice_dict[message_tmp.author.id]
         else:
-            command1 = bat_json + ' ' + arg + ' ' + '1'
-            command2 = bat_voice + ' ' + '1'
+            command1 = 'sh ' + sh_json + ' ' + arg + ' ' + '1'
+            command2 = 'sh ' + sh_voice + ' ' + '1'
         os.system(command1)
         
         # jsonファイルのかきかえ
